@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "npm run clean && parcel build src/index.html --no-source-maps --dist-dir docs",
+    "build": "npm run clean && parcel build src/index.html --no-source-maps --dist-dir docs --public-url ./",
     "clean": "rimraf docs && mkdir docs",
     "start": "parcel src/index.html --open",
     "check": "tsc --noEmit"
