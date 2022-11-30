@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #444;
+  color: #eee;
+  display: flex;
+}
+
+.experiment {
+  margin: auto;
+  width: 750px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.screen {
+  width: 600px;
+  height: 600px;
+  background-color: red;
+  display: flex;
+}
+
+.square {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  z-index: 10;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.patches {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+}
+
+.patches {
+  div {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .green {
+    background-color: green;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+}
+
+.instructions {
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+}
+
