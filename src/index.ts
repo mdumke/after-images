@@ -13,6 +13,8 @@ const runExperiment = async () => {
 }
 
 const reset = (color: Color) => () => {
+  timer.stop()
+  updateTimer('Start Timer')
   setColor(color)
   markSelection(color)
 }
