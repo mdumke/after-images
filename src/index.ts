@@ -1,6 +1,6 @@
+import { updateTimer, setColor, showWhiteField, markSelection } from './display'
 import { Timer } from './timer'
 import { Color } from './types'
-import { updateTimer, setColor, showWhiteField } from './display'
 
 const timer = new Timer()
 
@@ -14,6 +14,7 @@ const runExperiment = async () => {
 
 const reset = (color: Color) => () => {
   setColor(color)
+  markSelection(color)
 }
 
 const registerListeners = () => {

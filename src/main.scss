@@ -49,8 +49,8 @@ body {
 
 .square {
   margin: auto;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: #ccc;
   z-index: 10;
   display: flex;
@@ -131,6 +131,11 @@ body {
 
   .yellow:active {
     background-color: rgba(255, 255, 0, 0.74);
+  }
+
+  .selected {
+    outline-offset: 2px;
+    outline: 1px solid white;
   }
 }
 
